@@ -12,17 +12,17 @@ pages:
     - 'Overview': '03-lesson-install/overview.md'
     - 'Git': '03-lesson-install/git.md'
     - 'Eclipse EGit/JGit': '03-lesson-install/eclipse.md'
-- '4 - Configure Git': '04-lesson-config/lesson-config.md'
-- '5 - New Repository': '05-lesson-new-repo/lesson-new-repo.md'
-- '6 - Standard Repository Files': '06-lesson-standard-repo-files/lesson-standard-repo-files.md'
-- '7a - Using Git': '07a-lesson-using-git/lesson-using-git.md'
-- '7b - GitHub Tools': '07b-lesson-github-tools/lesson-github-tools.md'
-- '7c - Difference Tools': '07c-lesson-diff-tools/lesson-diff-tools.md'
-- '7d - StateMod Example': '07d-lesson-statemod-example/lesson-statemod-example.md'
-- '7e - Dataset Example': '07e-lesson-dataset-example/lesson-dataset-example.md'
-- '8a - Workflow Concepts': '08a-lesson-workflow-concepts/lesson-workflow-concepts.md'
-- '8b - Merge Conflicts': '08b-lesson-merge-conflicts/lesson-merge-conflicts.md'
-- '8c - Pull Requests': '08c-lesson-pull-requests/lesson-pull-requests.md'
+  - '4 - Configure Git': '04-lesson-config/lesson-config.md'
+  - '5 - New Repository': '05-lesson-new-repo/lesson-new-repo.md'
+  - '6 - Standard Repository Files': '06-lesson-standard-repo-files/lesson-standard-repo-files.md'
+  - '7a - Using Git': '07a-lesson-using-git/lesson-using-git.md'
+  - '7b - GitHub Tools': '07b-lesson-github-tools/lesson-github-tools.md'
+  - '7c - Difference Tools': '07c-lesson-diff-tools/lesson-diff-tools.md'
+  - '7d - StateMod Example': '07d-lesson-statemod-example/lesson-statemod-example.md'
+  - '7e - Dataset Example': '07e-lesson-dataset-example/lesson-dataset-example.md'
+  - '8a - Workflow Concepts': '08a-lesson-workflow-concepts/lesson-workflow-concepts.md'
+  - '8b - Merge Conflicts': '08b-lesson-merge-conflicts/lesson-merge-conflicts.md'
+  - '8c - Pull Requests': '08c-lesson-pull-requests/lesson-pull-requests.md'
 - 'Resources':
    - 'Git Resources': 'resources/resources.md'
    - 'Git Cheatsheet': 'resources/git-cheatsheet.md'
@@ -30,7 +30,11 @@ pages:
    - 'Git Messages': 'resources/git-messages.md'
    - 'Git Bash': 'resources/git-bash.md'
    - 'Release Notes': 'resources/release-notes.md'
-theme: readthedocs
+# MkDocs comes with mkdocs and readthedocs themes
+# Install others including cosmo by running as admin:  'pip install mkdocs-bootswatch'
+# -See: http://mkdocs.github.io/mkdocs-bootswatch/#installation-usage
+#theme: readthedocs
+theme: cosmo
 repo_url:  https://github.com/OpenWaterFoundation/cdss-learn-git
 site_description:  CDSS Learn Git
 site_author:  Open Water Foundation

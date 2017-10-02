@@ -1,6 +1,10 @@
 # Ignore the following files (do not commit working files to repository)
 # - see other .gitignore in mkdocs-project folder, to exclude auto-generated site
 
+# Ignore the site file in the MkDocs project since it is dynamically created
+
+mkdocs-project/site/
+
 # Ignore temporary files from editors
 
 *.swp

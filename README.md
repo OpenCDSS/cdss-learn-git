@@ -25,6 +25,7 @@ The following software must be installed to view the documentation with MkDocs:
 
 * [Python 2 or 3](https://www.python.org/downloads/)
 * [MkDocs 16+](http://www.mkdocs.org/)
+* [cosmo MkDocstheme](http://mkdocs.github.io/mkdocs-bootswatch/#installation-usage) - nice theme with search and compact menus
 
 ## How to Edit/View/Deploy ##
 
@@ -34,8 +35,9 @@ site is being served locally).
 2. **To edit:**  Use a text editor.  The web browser content will automatically refresh when changes are detected.
 If the browser does not load content, it is usually because there is an error,
 and a message will be printed in the command line window.
-3. **To deploy:**  Run an appropriate script in the `build-util` folder to copy to cloud storage.
+3. **To deploy:**  Run the `build-util/copyToOwfAmazonS3.bat` batch file to copy to OWF cloud static website.
 This will require appropriate credentials for the receiving cloud system.
+An alternate script will be added to copy to a CDSS/State of CO website in the future.
 
 ## Contributing ##
 
