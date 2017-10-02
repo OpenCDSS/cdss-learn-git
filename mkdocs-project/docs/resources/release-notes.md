@@ -5,3 +5,4 @@ Issue numbers in the repository are indicated in brackets.
 
 * **2017-10-01**
 	- Initial version
+	- [1] add explanation for tags.

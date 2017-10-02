@@ -28,6 +28,7 @@ The following sections are included in this lesson:
 * [Merge Branch Using `git merge`](#merge-branch-using-git-merge)
 * [Push Files to GitHub Using `git push`](#push-files-to-github-using-git-push)
 * [Delete the Branch Using `git branch`](#delete-the-branch-using-git-branch)
+* [Create a Tag Using `git tag`](#create-a-tag-using-git-tag)
 * [Next Steps](#next-steps)
 
 See also the [Pro Git Book](https://git-scm.com/book/en/v2).
@@ -858,6 +859,47 @@ sam (master) test-cdss-git-training-repo $ git log --oneline --graph --decorate 
 Note that in the above the branch is still indicated in the history (even if deleted) because Git
 recognizes that there was a divergence and then a merge, based on the number of parent and child commits.
 However, the first "fast forward" merge simply played the changes onto the master and does not show the branch.
+
+## Create a Tag Using `git tag` ##
+
+Git branches can be used for long-running version histories such as `master`
+and short histories such as a bug fix or feature branch.
+In both cases, a branch typically represents work that occurs over a timespan.
+A branch can continue to move forward with additional commits.
+
+A "tag", on the other hand, represents the status and contents of the repository at a single point in time.
+Tags are most often used to indicate milestones or release versions.
+Tags are convenient because it is possible to checkout the repository working files corresponding to a tag,
+for example to build a version of software or to examine a document at a point in time.
+Tags have similarity to other commits.
+For more information, see: [Git Pro Book - Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
+
+Tags can be created as lightweight or annotated.  It is best to use annotated tags, as shown in the following example:
+
+```sh
+sam (master) test-cdss-git-training-repo $ git tag -a version1 -m 'Version 1 of product'
+
+sam (master) test-cdss-git-training-repo $ git tag
+version1
+
+sam (master) test-cdss-git-training-repo $ git push origin --tags
+Counting objects: 1, done.
+Writing objects: 100% (1/1), 182 bytes | 0 bytes/s, done.
+Total 1 (delta 0), reused 0 (delta 0)
+To https://github.com/smalers/test-cdss-git-training-repo.git
+ * [new tag]         version1 -> version1
+
+```
+
+The `git tag` command with annotation and commit message creates the tag for the current commit.
+
+The `git tag` command without other parameters lists tags.
+
+The `git push` command pushes the tags to the GitHub repository.
+
+The tag is then listed on GitHub as shown in the following image.
+
+![GitHub tag](images/github-tag.png)
 
 ## Next Steps ##
 
