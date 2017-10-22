@@ -2,7 +2,7 @@
 # Use hash-comments to comment out pages have not been written
 # Reference: http://www.mkdocs.org/user-guide/configuration/
 #
-site_name: CDSS Learn / Git
+site_name: 'CDSS Learn / Git'
 pages:
 - Introduction: index.md
 - 'Lessons':
@@ -18,8 +18,9 @@ pages:
   - '7a - Using Git': '07a-lesson-using-git/lesson-using-git.md'
   - '7b - GitHub Tools': '07b-lesson-github-tools/lesson-github-tools.md'
   - '7c - Difference Tools': '07c-lesson-diff-tools/lesson-diff-tools.md'
-  - '7d - StateMod Example': '07d-lesson-statemod-example/lesson-statemod-example.md'
-  - '7e - Dataset Example': '07e-lesson-dataset-example/lesson-dataset-example.md'
+  - '7d - StateMod Code Example': '07d-lesson-statemod-code-example/lesson-statemod-code-example.md'
+  - '7e - StateMod Dataset Example': '07e-lesson-statemod-dataset-example/lesson-statemod-dataset-example.md'
+  - '7f - Documentation Example': '07f-lesson-documentation-example/lesson-documentation-example.md'
   - '8a - Workflow Concepts': '08a-lesson-workflow-concepts/lesson-workflow-concepts.md'
   - '8b - Merge Conflicts': '08b-lesson-merge-conflicts/lesson-merge-conflicts.md'
   - '8c - Pull Requests': '08c-lesson-pull-requests/lesson-pull-requests.md'
@@ -30,17 +31,21 @@ pages:
    - 'Git Messages': 'resources/git-messages.md'
    - 'Git Bash': 'resources/git-bash.md'
    - 'Release Notes': 'resources/release-notes.md'
-# MkDocs comes with mkdocs and readthedocs themes
-# Install others including cosmo by running as admin:  'pip install mkdocs-bootswatch'
+# MkDocs comes with mkdocs and readthedocs themes, which are limited
+# Install material theme:  http://squidfunk.github.io/mkdocs-material/
+# - pip install --user mkdocs-material
+theme: material
+# Install cosmo theme running:  'pip install --user mkdocs-bootswatch'
 # -See: http://mkdocs.github.io/mkdocs-bootswatch/#installation-usage
 #theme: readthedocs
-theme: cosmo
-repo_url:  https://github.com/OpenWaterFoundation/cdss-learn-git
-site_description:  CDSS Learn Git
-site_author:  Open Water Foundation
-site_favicon:  cdss-favicon.ico
-copyright:  Copyright Open Water Foundation
-#extra_css:
-#- css/extra.css
-# Defaults to all JavaScript in the docs folder
-# extra_javascript:
+#theme: cosmo
+# Don't include GitHub link because edit page tool will automatically be on
+#repo_url:  https://github.com/OpenWaterFoundation/cdss-learn-git
+site_description:  'CDSS / Learn Git'
+site_author:  'Open Water Foundation'
+site_favicon:  'images/cdss-favicon.ico'
+copyright:  'Copyright Open Water Foundation'
+# Extra options:
+extra:
+  # Use extra CSS to customize styles, based on theme
+  extra_css: 'css/extra-material-theme.css'

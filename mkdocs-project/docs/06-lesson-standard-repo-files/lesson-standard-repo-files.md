@@ -8,10 +8,11 @@ The files that are discussed will be created in subsequent lessons.
 
 **Estimated completion time:  30 minutes**
 
-* [README.md](#readmemd)
-* [LICENSE](#license)
-* [.gitignore](#gitignore)
-* [.gitattributes](#gitattributes)
+* [README.md](#readmemd) - landing page for GitHub repository web page
+* [LICENSE](#license) - license for repository
+* [.gitignore](#gitignore) - used to ignore files from being committed to the repository
+* [.gitattributes](#gitattributes) - used to provide per-repository settings for all developers
+* [.github Folder](#github-folder) - provide issues template, pull request template, and `README.md`
 
 ## README.md ##
 
@@ -93,3 +94,13 @@ An editor such as Notepad++ can be used on Windows to view line endings, for exa
 (use the ***View / Shown Symbol / Show End of Line***):
 
 ![Line ending](images/line-ending-editor.png)
+
+## .github Folder #
+
+A `.github` folder can be added at the top level of a repository as a location for additional repository control files,
+as described below.  See also the [GitHub Issue and Pull Request templates article](https://github.com/blog/2111-issue-and-pull-request-templates).
+
+* `README.md` - if present, the file will be displayed when visiting the GitHub repository website and will override
+the `README.md` file created in the repository 
+* `ISSUE_TEMPLATE.md` - if present, the file will be used as the template for new issues on the GitHub repository Issues tool
+* `PULL_REQUESTI_TEMPLATE.md` - if present, the file will be used as the template for new pull requests on the GitHub repository Pull Requests tool
