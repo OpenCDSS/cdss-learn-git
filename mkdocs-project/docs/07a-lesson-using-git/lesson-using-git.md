@@ -975,18 +975,18 @@ However, these files are most likely not directly usable by people or tools that
 Consequently, additional packaging of products should be built into the repository.
 Examples of user versions for CDSS include:
 
-* For software:
-	+ Package and distribute software installer that can be run to install the software.
-	+ See the [StateMod Code Example](../07d-lesson-statemod-code-example/lesson-statemod-code-example)
+* For documentation:
+	+ Package and distribute the documentation with software (for software documentation) or data (for dataset documentation)
+	+ Install the documentation on a public website
+	+ See the [Documentation Example](../07d-lesson-documentation-example/lesson-documentation-example)
 * For model datasets (StateMod, StateCU, etc.):
 	+ Package and distribute input files so developers can create the model dataset files
 	+ Run the dataset using a specific model software version, and package
 	+ See the [StateMod Dataset Example](../07e-lesson-statemod-dataset-example/lesson-statemod-dataset-example)
 	and distribute the full input and output
-* For documentation:
-	+ Package and distribute the documentation with software (for software documentation) or data (for dataset documentation)
-	+ Install the documentation on a public website
-	+ See the [Documentation Example](../07f-lesson-documentation-example/lesson-documentation-example)
+* For software:
+	+ Package and distribute software installer that can be run to install the software.
+	+ See the [StateMod Code Example](../07f-lesson-statemod-code-example/lesson-statemod-code-example)
 
 These steps are specific to the repository and its contents.
 Examples of the full workflow for the above cases are provided in other lessons.
