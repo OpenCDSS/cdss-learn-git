@@ -9,27 +9,35 @@ be used as a reference, or search the internet for specific answers.
 
 **Estimated completion time:  45-90 minutes**
 
-**Note that `git` commands can be run from any folder in a repository's working files and will generate an error otherwise.
-Git Bash is used for examples because of its utility.  The local computer user "sam" is used for examples, which
+**Note that `git` commands can be run from any folder in a repository's working files and otherwise will generate an error
+similar to the following (also note that the Git Bash prompt does not display a repository name):**
+
+```text
+$ sam git-repos $ git status
+fatal: Not a git repository (or any of the parent directories): .git
+```
+
+**Git Bash is used for examples because of its utility.  The local computer user "sam" is used for examples, which
 in this case is a different name than the GitHub "smalers" user but is the same person.**
 
 The following sections are included in this lesson:
 
-* [Create Repository and Clone Using `git clone`](#create-repository-and-clone-using-git-clone)
-* [Create an Issue on GitHub Using GitHub Website](#create-an-issue-on-github-using-github-website)
-* [Pull Current Version from GitHub using `git pull`](#pull-current-version-from-github-using-git-pull)
-* [Create and Checkout a Branch Using `git branch` and `git checkout`](#create-and-checkout-a-branch-using-git-branch-and-git-checkout)
-* [Add and Edit Files Using Text Editor](#add-and-edit-files-using-text-editor)
-* [Check Repository Status Using `git status`](#check-repository-status-using-git-status)
-* [Add Files to Staging Area Using `git add`](#add-files-to-staging-area-using-git-add)
-* [Commit Files to Repository Using `git commit`](#commit-files-to-repository-using-git-commit)
-* [View the Repository History Using `git log`](#view-the-repository-history-using-git-log)
-* [Validate Changes Using Automated Tests](#validate-changes-using-automated-tests)
-* [Merge Branch Using `git merge`](#merge-branch-using-git-merge)
-* [Push Files to GitHub Using `git push`](#push-files-to-github-using-git-push)
-* [Delete the Branch Using `git branch`](#delete-the-branch-using-git-branch)
-* [Create a Tag Using `git tag`](#create-a-tag-using-git-tag)
-* [Next Steps](#next-steps)
+* [Create Repository and Clone Using `git clone`](#create-repository-and-clone-using-git-clone) - creates a local copy of repository (at start)
+* [Create an Issue on GitHub Using GitHub Website](#create-an-issue-on-github-using-github-website) - issues define increments of work
+* [Pull Current Version from GitHub using `git pull`](#pull-current-version-from-github-using-git-pull) - update local files for work done by others
+* [Create and Checkout a Branch Using `git branch` and `git checkout`](#create-and-checkout-a-branch-using-git-branch-and-git-checkout) - isolate local work until ready to merge
+* [Add and Edit Files Using Text Editor](#add-and-edit-files-using-text-editor) - make changes to files
+* [Check Repository Status Using `git status`](#check-repository-status-using-git-status) - useful feedback on editing and repository status
+* [Add Files to Staging Area Using `git add`](#add-files-to-staging-area-using-git-add) - indicate files to commit
+* [Commit Files to Repository Using `git commit`](#commit-files-to-repository-using-git-commit) - commit the files to the repository
+* [View the Repository History Using `git log`](#view-the-repository-history-using-git-log) - useful to understand commit history
+* [Validate Changes Using Automated Tests](#validate-changes-using-automated-tests) - test before merging and sharing with others
+* [Merge Branch Using `git merge`](#merge-branch-using-git-merge) - merge changes into the master branch files
+* [Push Files to GitHub Using `git push`](#push-files-to-github-using-git-push) - share with others via GitHub
+* [Delete the Branch Using `git branch`](#delete-the-branch-using-git-branch) - branch is no longer needed
+* [Create a Tag Using `git tag`](#create-a-tag-using-git-tag) - mark a version as important (as needed)
+* [Publish User Versions](#publish-user-versions) - publish versions of products for users
+* [Next Steps](#next-steps) - use the above to work on a project
 
 See also the [Pro Git Book](https://git-scm.com/book/en/v2).
 
@@ -37,8 +45,11 @@ See also the [Pro Git Book](https://git-scm.com/book/en/v2).
 
 ## Create Repository and Clone Using `git clone` ##
 
-**This step will be performed once whereas the remaining steps are performed in sequence every time
-a new issue needs to be worked on.**
+**This step will be performed once to initialize the local copy of the repository
+whereas the remaining steps are performed in sequence every time
+a new issue needs to be worked on.
+The step can be repeated to restart a local repository for an automated build process or to reinitialize
+the local copy if the remote GitHub repository has undergone major changes and it is easier to start with a new copy.**
 
 See the previous lesson for example of how to create a repository and clone to a local computer:
 [New Repository](../05-lesson-new-repo/lesson-new-repo)
@@ -69,6 +80,8 @@ repository folder.  The concept of working file is discussed more below.
 
 ## Create an Issue on GitHub Using GitHub Website ##
 
+**This step can be performed by anyone that needs to report an issue.**
+
 Files in a repository can be changed without extensive planning.
 For example, a developer that has good understanding of software code can just decide to fix a bug or implement an enhancement
 without telling anyone.
@@ -91,6 +104,9 @@ Note that when the issue is submitted it will be given an issue number, in this 
 ![new issue](images/github-new-issue2.png)
 
 ## Pull Current Version from GitHub Using `git pull` ##
+
+**This step ensures that new work on the local files start with a copy that matches the remote version.
+Consequently, new work will build on that done by others.**
 
 The default branch in the repository is named `master` and contains the current approved files that have previously been committed.
 Only tested and validated changes should be committed to the master.
@@ -120,6 +136,10 @@ However, for simple workflows with a small number of repository maintainers,
 assume that remote changes are OK and can be pulled into the `master` branch without issue.
 
 ## Create and Checkout a Branch Using `git branch` and `git checkout` ##
+
+**This step creates a separate copy of files in a branch to temporarily isolate new work.
+This allows the work to be fully tested before merging.  The work also can be thrown away if it becomes
+clear that it is not worth finishing.**
 
 New work should be done in a branch, for a number of reasons:
 
@@ -180,7 +200,9 @@ This can help be more efficient at using Git on the command line.
 
 ## Add and Edit Files Using Text Editor ##
 
-The new (mostly empty) repository that was initialized on the GitHub website has files similar to the following:
+**This step adds, deletes, renames, and modifies files - this is the same work that would be done if version control were not used.**
+
+The example new (mostly empty) repository that was initialized on the GitHub website has files similar to the following:
 
 ![New repo files](images/github-clone-repo2.png)
 
@@ -264,6 +286,8 @@ sam (1-feature-init-repo +) test-cdss-git-training-repo $
 
 ## Check Repository Status Using `git status` ##
 
+**`git status` is your friend.  Use it often to get the lay of the land and understand status of the local files.**
+
 A common task is to check the status of the repository and working files.
 The `git status` command can be run in any folder in the repository working files
 and will display the status of files, using relative paths from the current location.
@@ -338,6 +362,10 @@ no changes added to commit (use "git add" and/or "git commit -a")
 The files will be shown after the `git add` command is used, as discussed in the next section.
 
 ## Add Files to Staging Area Using `git add` ##
+
+**Modified working files (the files that are in normal folders) are not ready to commit as changes.
+Files need to be selected into the "index" ("staging area") before that subset of files is committed.
+Accidentally doing this can be backed out.**
 
 The previous file modifications resulted in changes to the working files.
 However, these files do not automatically get added to the Git repository.
@@ -445,12 +473,19 @@ as per the [Stack Overflow article](https://stackoverflow.com/questions/19730565
 
 ## Commit Files to Repository Using `git commit` ##
 
+**This step commits the staged files to the repository branch, at which time those changes
+will be part of the repository history.**
+
 At this point files have been modified in the working files and have been staged for commit.
 The `git commit` command is used to commit the changes to the repository on the currently checked-out branch.
 The command is generally run either by specifying the commit message on the command line,
 or by specifying the commit message in an editor (`git config --list` will display the `core.editor` property).
 
 ### Commit using Command Line Commit Message ###
+
+**Commit using a command line message if the commit message is short and fits on one line.**
+
+The example below illustrates how the `-m message` command line parameter specifies the commit message.
 
 ```sh
 sam (1-feature-init-repo +) test-cdss-git-training-repo $ git commit -m 'Create standard repository files'
@@ -477,6 +512,9 @@ Note that the `git status` output shows that the working files and repository br
 Git Bash prompt is normal again (no `*` or `+` shown).
 
 ### Commit using Text Editor Commit Message ###
+
+**Commit using a text editor message if the commit message is longer, including multiple lines.
+Helpful information is also provided by Git.**
 
 The other typical way to commit changes is to interactively edit the commit message.
 This is preferred in many cases because a best practice is to enter a summary message on the first line,
@@ -522,6 +560,9 @@ Save the file and the following will be displayed:
 ```
 
 ## View the Repository History Using `git log` ##
+
+**View the repository history log to understand the sequence of commits that have been made,
+including those made by other developers and branch merges.**
 
 At this point, if following the training instructions, there should be 3 commits in the repository for the branch:
 the original commit from GitHub, and two commits for files that have been added and modified.
@@ -570,6 +611,9 @@ These tools are not discussed in this basic training.
 
 ## Validate Changes Using Automated Tests ##
 
+**It is important to validate changes before sharing them with other developers or making public.
+Doing a good job with changes will save other people from finding errors.**
+
 At this point the local branch has been updated to include the new changes,
 and the repository is in agreement with the working files.
 The next steps are to merge the branch into the master branch as an official change and then push the local changes
@@ -591,6 +635,9 @@ Then the collaborator can pull the branch to their local computer and examine th
 Such collaboration may or may not be needed, depending on the size of the team and the need for peer review.
 
 ## Merge Branch using `git merge` ##
+
+**The branch that was used to isolate new changes needs to be merged into the master files in order to
+enhance the product that is being worked on, for example to resolve the issue that initiated the changes.**
 
 Assuming that the files that have been committed to the local issue branch have passed tests,
 they can be merged into the `master` branch using the `git merge` command.
@@ -616,6 +663,9 @@ there is much more information online.
 Other options may be considered in the future as developers become more skilled with Git.**
 
 ### Merge Using `git merge` - Default is to Fast Forward ###
+
+**This option is described first for illustration.
+However, the [`git merge --no-ff option` described in the next section](#merge-using-git-merge-no-ff-do-not-fast-forward) is recommended.**
 
 By default, the `git merge` command will do a "fast forward" merge.
 This means that all the changes on the local issue branch will be replayed onto the `master` branch and the commit history
@@ -671,6 +721,8 @@ since only the specific commit messages are indicated.
 An alternative approach is discussed in the next section.
 
 ### Merge Using `git merge --no-ff` - Do not Fast Forward ###
+
+**This is the preferred option to merge a branch.**
 
 In order to illustrate another approach, we must first create another branch to demonstrate.
 Therefore, execute commands as follows to create a new `1b-feature-init-repo` branch:
@@ -757,6 +809,8 @@ Date:   Fri Sep 29 01:18:54 2017 -0600
 
 ### Merge Using `git rebase` - Compress the History ###
 
+**This is a more advanced approach that may or may not be phased into CDSS projects.**
+
 Git rebasing basically replaces changes onto the receiving branch so that all the changes are combined.
 This approach is not recommended for OpenCDSS until developers become skilled at basic Git usage.
 
@@ -764,6 +818,10 @@ See the [Git Pro Book chapter on Git Branching - Rebasing](https://git-scm.com/b
 for more information.
 
 ## Push Files to GitHub Using `git push` ##
+
+**This step is needed to share local work with other contributors and public users of the repository files.
+It is best to push files up frequently for small increments of work if possible so that developers' repositories
+march together and do not become significantly disconnected.  Otherwise, it may take more work to synchronize changes.**
 
 At this point the original issue is hopefully resolved and has been sufficiently tested so that it can be publicly released.
 Running `git status` again shows the following:
@@ -805,6 +863,9 @@ It is also desirable to implement an automate test to confirm a bug fix or new f
 ![Github close issue](images/github-close-issue.png)
 
 ## Delete the Branch Using `git branch` ##
+
+**This step discards the temporary working branch.  Since it has been committed, the branch is no longer be needed.
+The commit message and possibly a tag (described below) will allow a developer to check out a specific commit if necessary.**
 
 After the above actions, the local `master` branch is consistent with the remote GitHub `master` branch and there
 are two local branches that were used for incremental work.  These branches can be listed as shown below:
@@ -862,6 +923,8 @@ However, the first "fast forward" merge simply played the changes onto the maste
 
 ## Create a Tag Using `git tag` ##
 
+**This step is used to mark a commit as a named version, such as at a major milestone.**
+
 Git branches can be used for long-running version histories such as `master`
 and short histories such as a bug fix or feature branch.
 In both cases, a branch typically represents work that occurs over a timespan.
@@ -901,8 +964,38 @@ The tag is then listed on GitHub as shown in the following image.
 
 ![GitHub tag](images/github-tag.png)
 
+## Publish User Versions ##
+
+**Multiple additional steps may be needed to publish the work in a way that can be used by others.**
+
+The repository contains the source files for software, a dataset, a website, etc.
+The files should be organized in a way that allows the developers of the content to perform review,
+automated testing, etc.
+However, these files are most likely not directly usable by people or tools that want to use the final product.
+Consequently, additional packaging of products should be built into the repository.
+Examples of user versions for CDSS include:
+
+* For software:
+	+ Package and distribute software installer that can be run to install the software.
+	+ See the [StateMod Code Example](../07d-lesson-statemod-code-example/lesson-statemod-code-example)
+* For model datasets (StateMod, StateCU, etc.):
+	+ Package and distribute input files so developers can create the model dataset files
+	+ Run the dataset using a specific model software version, and package
+	+ See the [StateMod Dataset Example](../07e-lesson-statemod-dataset-example/lesson-statemod-dataset-example)
+	and distribute the full input and output
+* For documentation:
+	+ Package and distribute the documentation with software (for software documentation) or data (for dataset documentation)
+	+ Install the documentation on a public website
+	+ See the [Documentation Example](../07f-lesson-documentation-example/lesson-documentation-example)
+
+These steps are specific to the repository and its contents.
+Examples of the full workflow for the above cases are provided in other lessons.
+Publishing user-focused versions of repository contents should use scripts to automate work
+so that packaging can be efficient, documented, and human errors can be minimized.
+
 ## Next Steps ##
 
 The next steps are to learn more about GitHub features, to apply what you have learned to code and dataset repositories,
 and to increase your knowledge with more advanced topics such as dealing with merge conflicts.
-From this point forward the lessons can be taken non-sequentially.
+From this point forward the lessons can be taken non-sequentially
+and developers are expected to expand their knowledge based on first-hand experience with Git and GitHub.

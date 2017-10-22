@@ -6,7 +6,7 @@
 mkdocs-project/site/
 
 # Ignore temporary files from editors
-
+# vi/vim
 *.swp
 *.swo
 

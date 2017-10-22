@@ -27,6 +27,7 @@ The following documentation summarizes how to set global Git configuration prope
 * [Getting Started - First Time Git Setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
 
 Typical configuration includes the following (replace the user information with appropriate values).
+For example run the `git config` command in the Git Bash window.
 The editor that is specified will be used for commit messages if not specified on the command line (`git commit` rather than
 `git commit -m 'commit message'`).
 
@@ -44,6 +45,22 @@ core.editor=vim
 merge.conflictstyle=diff3
 push.default=upstream
 ```
+
+The `vim` editor is the default in Git Bash.
+However, this terminal-window editor requires skill to use and may be confusing.
+See the [Vim website](http://www.vim.org/) and [Vim documentation](http://vimdoc.sourceforge.net/htmldoc/usr_02.html) for more information.
+If `vim` is the editor and is used for editing, it may be necessary to use some editor commands to move forward and set a different editor.
+The `vim` editor uses an insert mode where keys that are typed will be inserted into a file,
+and a command mode where keys that are typed result in actions such as moving the cursor, deleting text, and entering insert mode.
+Use the `ESC` key to exit insert mode.
+Use the `i` character to enter insert mode before the current character
+(which will display `INSERT` in the window footer).
+
+To select another editor for commit messages use the `git config --global core.editor someeditor` command
+and specify the name of the editor program to use in place of `someeditor`.
+If necessary, specify the full path to the editor program if the `PATH` environment variable does not include the program.
+Do not use `Notepad` because it does not properly handle end of line if Linux file is encountered.
+Instead, use [Notepad++](https://notepad-plus-plus.org/), [UltraEdit](https://www.ultraedit.com/), or another "smart" editor.
 
 ## Location of Git Configuration Files ##
 

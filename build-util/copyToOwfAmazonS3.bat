@@ -9,12 +9,23 @@ rem dryrun="--dryrun"
 
 set s3Folder="s3://learn.openwaterfoundation.org/cdss-learn-git"
 
-if "%$1%" == "" (
-	echo ""
-	echo "Usage:  copyToOwfAmazonS3 AmazonConfigProfile"
-	echo ""
-	echo "Copy the site files to the Amazon S3 static website folder:  %s3Folder%"
-	echo ""
+rem Make sure that this batch file is being run from the build-util folder
+rem Get current folder, see: https://superuser.com/questions/160702/get-current-folder-name-by-a-dos-command
+for %%* in (.) do set curDirName=%%~nx*
+if NOT "%curDirName%" == "build-util" (
+	echo.
+        echo Must run from build-util folder
+	echo.
+        exit /b 1
+)
+
+if "%1%" == "" (
+	echo.
+	echo Usage:  copyToOwfAmazonS3 AmazonConfigProfile
+	echo.
+	echo Copy the site files to the Amazon S3 static website folder:  %s3Folder%
+	echo.
+	exit /b 0
 )
 
 set awsProfile=%1%
@@ -32,3 +43,5 @@ rem - apparently can't pass an empty argument so comment out %dryrun%
 rem %dryrun%
 
 call aws s3 sync ../mkdocs-project/site %s3Folder% --delete --profile %awsProfile%
+
+exit /b 0
