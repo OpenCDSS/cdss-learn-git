@@ -386,7 +386,9 @@ There are actually 3 locations on the local computer where files can exist
 Use the `git add` command to add (stage) files for the commit step, in this case using the example files in this lesson.
 The following assume that the current folder is the root folder in the working files (the repository folder).
 The following `git add` command adds a single file and `git status` shows that it has now
-been staged because the `README.md` file is listed under `Changes to be committed`:
+been staged because the `README.md` file is listed under `Changes to be committed`.
+The `.gitignore` and `.gitattributes` files are assumed to have been added as per the
+[Standard Repository Files](../06-lesson-standard-repo-files/lesson-standard-repo-files) documentation.
 
 ```sh
 sam (1-feature-init-repo *) test-cdss-git-training-repo $ git add README.md

@@ -17,6 +17,10 @@ The files that are discussed will be created in subsequent lessons.
 ## README.md ##
 
 The top-level `README.md` file provides information about the repository contents and purpose.
+Creating a new repository on the GitHub site gives the option of adding a default `README.md` file,
+or the file can be created with an editor.
+The `README.md` file is the first documentation that will be shown for the repository on GitHub so
+it should contain useful information about the repository and actionable instructions.
 It is common to include the following sections:
 
 * Contents
@@ -42,7 +46,7 @@ committing to the repository.  For example, see [MarkdownPad](http://markdownpad
 ## LICENSE ##
 
 A text `LICENSE` file should be included in the root folder to indicate terms of use for the repository contents.
-A license file can e initialized when a new repository is created or can be added later.
+A license file can be initialized when a new repository is created on GitHub or can be added later.
 
 The OpenCDSS project is determining appropriate licenses for software and other content.
 
@@ -50,8 +54,11 @@ The OpenCDSS project is determining appropriate licenses for software and other 
 
 A `.gitignore` file can be created in the repository root folder to indicate to Git software which files
 should not be committed to the repository.
+A default file can be initialized when creating a new repository on GitHub, based on the language for the project,
+or the file can be created with a text editor.
+It is often simplest to copy a `.gitignore` file from a similar repository.
 It is typical that this file is customized for the programming language and development environment used for a project.
-For example, Microsoft software temporary files, text editor backup files, compiler output binary files,
+For example, Microsoft software temporary files, text editor backup files, log files, compiler output binary files,
 and automated test output should be ignored.
 
 **It is important to not commit files to the repository that should be ignored.**
