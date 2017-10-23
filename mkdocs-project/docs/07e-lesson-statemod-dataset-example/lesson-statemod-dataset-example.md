@@ -1,6 +1,10 @@
 # Learn Git / StateMod Dataset Example #
 
-This page discusses options for maintaining StateMod (and other CDSS model) datasets in Git repositories.
+This lesson discusses options for maintaining StateMod (and other CDSS model) datasets in Git repositories.
+Complete the lesson by reading the information on this page and following links to other information.
+Then apply what you have learned in your work.
+
+**Estimated completion time:  15-30 minutes**
 
 CDSS datasets have traditionally not been maintained in a version control system.
 Instead, dated folders or other methods have been used to track versions.
@@ -112,6 +116,7 @@ versions with a name so that the files can be easily checked out.
 
 The Git workflow for a model dataset is similar to other workflows.
 Refer to previous training lessons for instruction on how to use Git commands.
+The following workflow can be understood best through first-hand experience.
 
 1. Add an issue in the dataset repository using the GitHub ***Issues*** tool,
 for example to address a data error or enhancement.
