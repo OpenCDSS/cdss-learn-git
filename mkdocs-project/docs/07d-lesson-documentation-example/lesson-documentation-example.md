@@ -1,8 +1,13 @@
 # Learn Git / Documentation Example #
 
-This page provides a guideline for using Git/GitHub to develop CDSS documentation,
+This lesson provides guidelines for using Git/GitHub to develop CDSS documentation,
 in particular stand-alone, web-enabled, navigable documents.
 Documentation is important in order to capture knowledge and educate others.
+Complete the lesson by reading the information on this page and following links to other information.
+Then apply what you have learned in your work.
+
+**Estimated completion time: 15-30 minutes**
+
 Examples of CDSS documentation include the following and are discussed below:
 
 * [Training Documentation](#training-documentation) - training documentation intended for users of software and data
@@ -74,7 +79,8 @@ If they are not part of the core development team, they should fork the reposito
 
 #### General Workflow ####
 
-The following is the general workflow for editing documentation:
+The following is the general workflow for editing documentation,
+and can best be understood through first-hand experience:
 
 1. Add an issue in the documentation repository using the GitHub ***Issues*** tool.
 2. Start on the `master` branch in working files.
