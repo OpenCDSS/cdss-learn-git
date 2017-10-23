@@ -60,3 +60,11 @@ Contributors:
 ## License ##
 
 The license is being determined as part of the OpenCDSS effort.
+
+## Release Notes ##
+
+The following release notes indicate the update history for documentation, with GitHub repository issue indicated, if applicable
+(links to issues via README.md are not cleanly supported by GitHub so use the repository issues page to find).
+
+* 2017-10-23 [2,3,4,5,8,12,14] - switch to Material theme, fill out content for additional pages, fix some broken links
+* 2017-10-01 - initial version

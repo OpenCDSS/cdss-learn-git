@@ -61,6 +61,12 @@ and the file can be updated as additional files are discovered that should be ig
 
 Additional `.gitignore` files can be added in any folder if appropriate.
 
+For example, the following `.gitignore` files are used for CDSS repositories:
+
+* [Learn Git .gitignore file](https://github.com/OpenWaterFoundation/cdss-learn-git/blob/master/.gitignore) - this documentation
+* [StateMod .gitignore file](https://github.com/OpenWaterFoundation/cdss-app-statemod-fortran/blob/master/.gitignore) - StateMod
+source code repository (link may be broken because repository is not yet public):
+
 See the following for more information:
 
 * [.gitignore documentation](https://git-scm.com/docs/gitignore)
@@ -79,9 +85,11 @@ and carriage return and line feed on Windows).
 If developers work on different operating systems, there is potential that text files would flip-flop between
 line endings for one developer and another.  Git provides features to avoid this.
 
-For example, the following `.gitignore` files are used for CDSS repositories:
+For example, the following `.gitattributes` files are used for CDSS repositories:
 
-* [StateMod .gitignore file](https://github.com/OpenWaterFoundation/cdss-app-statemod-fortran/blob/master/.gitattributes)
+* [Learn Git .gitattributes file](https://github.com/OpenWaterFoundation/cdss-learn-git/blob/master/.gitattributes) - this documentation
+* [StateMod .gitattributes file](https://github.com/OpenWaterFoundation/cdss-app-statemod-fortran/blob/master/.gitattributes) - StateMod
+source code repository (link may be broken because repository is not yet public):
 
 See the following for more information:
 
