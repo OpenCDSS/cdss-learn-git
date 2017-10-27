@@ -26,7 +26,11 @@ Consequently, a joined repository dataset was created:
 
 The remainder of this page discusses technical considerations with using Git for model datasets.
 
-* [cdss-model-cu-sw-yampa StateCU and StateMod dataset repository](https://github.com/OpenWaterFoundation/cdss-model-cu-sw-yampa)
+* [StateMod Dataset Version Control Considerations](#stateMod-dataset-version-control-considerations)
+* [Git Workflow for StateMod Dataset](#git-workflow-for-statemod-dataset)
+* [cdss-model-cu-sw-yampa StateCU and StateMod dataset repository](https://github.com/OpenWaterFoundation/cdss-model-cu-sw-yampa) - used in discussion
+
+--------------
 
 ## StateMod Dataset Version Control Considerations ##
 
@@ -111,6 +115,67 @@ For example, input files could be organized by command file or third-party data 
 This recommendation should be evaluated by CDSS modelers.
 10. **Tag versions for important dataset milestones** - The `git tag` feature can be used to tag important
 versions with a name so that the files can be easily checked out.
+11. **Consider options for dataset names rather than putting year in each dataset filename** - Traditionally, CDSS model datasets have
+been named with the year in the filename, for example `cm2015` for the Colorado Basin dataset 2015 update.
+Core dataset files all had the same year-stamped name, such as `cm2015.dds`, `cm2015.ddr`, etc.
+This approach decreases uncertainty about which version of the dataset is being used.
+However, maintenance of datasets along a continuous timeline becomes more complex because
+updating the dataset for a new year requires naming all the files.
+In a version control system like Git, there is not a need for year-stamped filenames because version control is baked into the tools.
+The following are considerations related to this topic:
+	* The traditional naming convention could continue to be used, where files are renamed as a new major update is made
+	(e.g., `cm2015.dds` renamed to `cm2017.dds`).
+	Git internally identifies unique files using a hash and would recognize the change as a rename.
+	However, it could be confusing trying to track filenames through multiple renames.
+	* Alternatively, the year could be removed from the filename, in which case a more generic
+	filename like `cm.dds` or `colorado.dds` could be used.
+	Within Git, such changes could be delineated by using tags, for example save a tag named
+	`cm2015-YYYY-MM-DD` to indicate the version of the model and release date.
+	* A more explicit indication of the dataset version might be needed if generic filenames are used.
+	For example, add something to the response file to indicate the version number, release date, etc.
+	Then software tools can display this information to the user when they work on the dataset.
+	Official releases of the dataset can clearly indicate the version, similar to HydroBase version.
+	Release notes for the dataset can also indicate update history, for example in response to GitHub ***Issues***.
+	* The packaging of model datasets for public use, consisting of the model input files after running DMIs,
+	could clearly identify the version, for example, by using a folder corresponding to the version.
+	The installation file might be something like `cm2015.zip` and
+	might default to an installation folder like `CDSS/models/colorado/cm2015/Diversions/cm.dds`.
+	This would allow multiple zip files and parallel installations of model versions.
+	The specifics would need to be determined.
+	* Any dates that are used need to be understood.  Is the general year (`cm2015`) the end year of updated dataset?
+	Is a date `YYYY-MM-DD` the release date of the dataset?
+12. **Consider options for overall dataset workflow** - Model datasets have traditionally been developed using
+datestamped or otherwise versioned folders, with file-sharing collaboration occurring by emailing files or using
+a cloud service such as Dropbox or Google Drive.  This can lead to confusion as to who has made changes.
+The following are considerations related to this topic:
+	* The KDiff3 software is very useful for comparing full dataset and should be one of the tools that modelers use.
+	* The use of GitHub can generally improve collaboration because it is clear what is the
+	official version, who has modified files, issues and branch names correspond to specific tasks, etc.
+	* Tags can identify milestones such as dataset update releases, as discussed above.
+	* If necessary, a long-running branch can be maintained.
+	For example a branch corresponding to the `cm2015` version of the dataset can be created and can be updated
+	over time to ensure that old versions continue to benefit from updates.
+	This may be appropriate if, for example, an old dataset version needs to be updated to work with newer software version.
+	This approach can be taken whether or not the dataset files use a year (`cm2015`) or not (`cm`).
+	Obviously, the more branches/versions that are actively supported will require more resources.
+	* Conventions need to be put in place in the form of modeler guidelines (for example in this documentation)
+	for how to deal with public/private datasets, timeline of edits, and workflow used by the team, for example:
+		+ If a dataset is maintained as a public repository, should incremental improvements be
+		visible in an ongoing fashion to promote open collaboration and transparency?
+		Or, will those changes occur in a private fork of the repository and then
+		be merged back to the public version at some point?
+		+ To what extent should a private repository be used for new datasets,
+		for example, to protect against people using preliminary products.
+		If new datasets are public, to what degree should documentation such as `README.md` files be used to clearly warn consumers about the
+		preliminary nature of datasets?
+		+ What is the test/review process for datasets so that appropriate sign-off occurs
+		and what is the workflow for review (reviewers may have different levels of Git/GitHub competance - see below)?
+		+ Not everyone will be able to get up to speed with Git/Github and more formal modeling protocols.
+		Multiple options may be needed to allow engagement with modeling, including:
+			- Full engagement using Git software, branch/merge, etc., either by working with the `master` branch,
+			public/private repositories, doing pull requests, etc.
+			- Download the repository files as a zip file and make suggestions via ***Issues*** or email.
+			- Download the published dataset files and make suggestiosn via ***Issues*** or email.
 
 ## Git Workflow for StateMod Dataset ##
 

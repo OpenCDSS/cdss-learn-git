@@ -46,6 +46,6 @@ site_author:  'Open Water Foundation'
 site_favicon:  'images/cdss-favicon.ico'
 copyright:  'Copyright Open Water Foundation'
 # Extra options:
-extra:
-  # Use extra CSS to customize styles, based on theme
-  extra_css: 'css/extra-material-theme.css'
+# Use extra CSS to customize styles, based on theme
+extra_css:
+  - 'css/extra-material-theme.css'
