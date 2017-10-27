@@ -6,9 +6,15 @@
  * - ul default is filled disc (bullet)
 */
 ul ul {
+	/* The following works in body but messes up Table of Contents on the right. */
+	/*list-style-type:  circle !important;*/
+	/* The following does not work in body but Table of Contents is OK. */
 	list-style-type:  circle;
 }
 
 ul ul ul {
+	/* The following works in body but messes up Table of Contents on the right. */
+	/*list-style-type:  square !important;*/
+	/* The following does not work in body but Table of Contents is OK. */
 	list-style-type:  square;
 }
