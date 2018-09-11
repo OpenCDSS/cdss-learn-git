@@ -1,4 +1,6 @@
 #!/bin/sh
+(set -o igncr) 2>/dev/null && set -o igncr; # this comment is required
+# The above line ensures that the script can be run on Cygwin/Linux even with Windows CRNL
 #
 # This script currently does not work with Git Bash because the aws script #! shebang has a space in path to Python
 # Instead, use the *.bat version of this script and run from a Windows command shell.

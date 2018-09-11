@@ -7,11 +7,12 @@ Select a GitHub repository to study and follow along with the lesson explanation
 
 * [GitHub General Features](#github-general-features) - GitHub website basics
 * [Code](#code) - tools to interact with source files
+* [Insights](#insights) - metrics about repository activities
 * [Issues](#issues) - tools for reporting and managing issues
 * [Pull requests](#pull-requests) - tools for managing pull requests (submissions from collaborators)
-* [Wiki](#wiki) - online wiki for the repository
-* [Insights](#insights) - metrics about repository activities
+* [Releases](#releases) - archive for product milestones
 * [Settings](#settings) - change repository information
+* [Wiki](#wiki) - online wiki for the repository
 
 -------------
 
@@ -100,16 +101,24 @@ The browser's CTRL-S (save) feature can be used to save the file to the computer
 
 * ***History*** - show the output similar to the `git log` command, indicating the modification history of the file.
 
+## Insights ##
+
+Insights provides metrics about the repository, in particular the modification activity.
+Additional information about Insights and their use for CDSS will be added later.
+
 ## Issues ##
 
 The ***Issues*** tab displays an interface that lists open issues.
 A number of tools are provided to filter and sort issues.
-Most of the time the main actions for developers will be to add new issues, assign an issue for development work,
-add comments as issues are discussed, and mark the issue as resolved.
+Developers will add new issues for bugs and enhancements,
+specify issue labels for type/priority/size, add comments as issues are discussed and work is completed,
+and close the issue when resolved.
 The ***Issues*** feature is used for CDSS repositories to report and track bugs, make enhancement requests, and
 ask questions.
 
-Sequential feature numbers are automatically assigned and should be used in branch names during development.
+The issue number is automatically generated when adding a new issue
+and should be used in branch names during development, which allows cross-referencing
+repository commits and merges with issues.
 
 See also:
 
@@ -123,6 +132,23 @@ See also:
 
 * [About pull requests](https://help.github.com/articles/about-pull-requests/)
 
+## Releases ##
+
+The ***Releases*** feature (above the code list) provides a way to publish archived product releases.
+See [Creating Releases](https://help.github.com/articles/creating-releases/).
+
+* Any tag on the repository will automatically be listed as a release, and GitHub will automatically
+provide a link to download the code as a `zip` or `tar.gz` file.
+* Additional binary files can be saved with the release, such as an installer.
+
+This provides a convenient way to archive installers.
+However, it may not be full-featured enough to use for the full software download page.
+
+## Settings ##
+
+Settings can be changed by repository administrators and those with write permissions, depending on the setting being changed.
+For example, a repository can be renamed or moved to ownership of another organization.
+
 ## Wiki ##
 
 Information about Wikis and their use for CDSS will be added later.
@@ -130,13 +156,3 @@ Information about Wikis and their use for CDSS will be added later.
 See also:
 
 * [GitHub Wiki Help](https://help.github.com/categories/wiki/)
-
-## Insights ##
-
-Insights provides metrics about the repository, in particular the modification activity.
-Additional information about Insights and their use for CDSS will be added later.
-
-## Settings ##
-
-Settings can be changed by repository administrators and those with write permissions, depending on the setting being changed.
-For example, a repository can be renamed or moved to ownership of another organization.
