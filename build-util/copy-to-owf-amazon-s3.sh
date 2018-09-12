@@ -5,9 +5,6 @@
 # This script currently does not work with Git Bash because the aws script #! shebang has a space in path to Python
 # Instead, use the *.bat version of this script and run from a Windows command shell.
 
-echo "Shell script current does not work.  Use *.bat version instead."
-exit 1
-
 #
 # Copy the site/* contents to the learn.openwaterfoundation.org website
 # - replace all the files on the web with local files
