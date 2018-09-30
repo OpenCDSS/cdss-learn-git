@@ -1,6 +1,6 @@
 # Learn Git / Workflow Concepts #
 
-This lesson explains Git workflow concepts.
+This lesson explains Git workflow concepts at an overview level.
 A "workflow" is the sequence of steps used to manage content in a Git repository,
 primarily dealing with the use of branches, and the processes used to branch and merge.
 
@@ -20,7 +20,7 @@ The remainder of this page consists of the following sections.
 
 ## Workflow Overview ##
 
-"Git workflow" is a general term that refers to how commits are managed within branches and flow into production software,
+A "Git workflow" is a general term that refers to how commits are managed within branches and flow into production software,
 and how users/roles participate in the workflow.
 The term "Git branching model" is also used. 
 The concept of workflow applies to any version control, including, for example, how to create and maintain a large
@@ -46,7 +46,7 @@ recommendations for an approach to use in CDSS.  The following are additional re
 ## A Successful Git Branching Model ##
 
 **This Git workflow is not (currently) recommended for CDSS software projects.
-Instead a simpler "feature branch" workflow is recommended.
+Instead a simpler "feature branch" (also called "topic branch") workflow is recommended.
 This recommendation may change after the initial CDSS open source projects have been running for awhile.**
 
 See the following background resources:
@@ -76,9 +76,10 @@ The next section explains an alternate "feature branch" workflow that is simpler
 **This workflow is recommended as the primary workflow for CDSS and is [discussed further below](#recommended-cdss-git-workflow).**
 
 The previous section presented a popular Git workflow.
-However, a "feature branch" workflow is simpler and aligns with Git defaults.
+However, a "feature branch" (also called "topic branch") workflow is simpler and aligns with Git defaults.
 
 * See the [Git Branching approach by Jeremy Helms](https://gist.github.com/digitaljhelms/4287848) - similar diagram to the Git Flow model
+* [GitHub Workflow](https://guides.github.com/introduction/flow/index.html) - the lightweight workflow recommended by GitHub
 * [blackfalcon/git-feature-workflow on GitHib](https://gist.github.com/blackfalcon/8428401) - a useful tutorial for the feature branching model
 * Atlassian (Bitbucket tutorials) - Bitbucket is an alternative to GitHub and is similar in many ways
 	+ [Git Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)
