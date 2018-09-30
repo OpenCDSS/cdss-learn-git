@@ -14,10 +14,33 @@ MkDocs is used because it allows training materials to be created using Markdown
 content can be easily managed in Git/GitHub,
 and the resulting static website is professional-looking, navigable, and useful.
 
-## Repository Contents ##
+## Repository Folder Structure ##
 
 The repository contains a typical MkDocs project in the `mkdocs-project` folder.
 Refer to [MkDocs documentation](http://www.mkdocs.org/) for guidance on creating MkDocs websites.
+
+```
+cdss-learn-git/         Git repository folder matching repository name.
+  build-util/           Folder containing useful scripts.
+  mkdocs-project/       Folder containing standard MkDocs project.
+    docs/               Folder containing Markdown files.
+    mkdocs.yml          Configuration file for the documentation.
+    site/               Static website, dynamically created and in .gitignore.
+  README.md             This file.
+```
+
+## Development Environment Folder Structure ##
+
+The following folder structure is recommended for the development environment for this documentation.
+
+```
+C:\Users\user\            Windows user folder.
+/c/Users/user/            Git Bash user folder.
+  cdss-dev/               Development files for OpenCDSS products.
+    Learn-Git/            Product folder for this documentation.
+      git-repos/          Git reposities for the documentation (only one needed, below).
+        cdss-learn-git/   The repository files as shown in the previous section.
+```
 
 ## Prerequisites ##
 
@@ -35,7 +58,8 @@ site is being served locally).
 2. **To edit:**  Use a text editor.  The web browser content will automatically refresh when changes are detected.
 If the browser does not load content, it is usually because there is an error,
 and a message will be printed in the command line window.
-3. **To deploy:**  Run the `build-util/copyToOwfAmazonS3.bat` batch file to copy to OWF cloud static website.
+3. **To deploy:**  Run the `build-util/copy-to-owf-amazon-s3.sh` shell script 
+or `build-util/copy-to-owf-amazon-s3.bat` Windows batch file to copy to OWF cloud static website.
 This will require appropriate credentials for the receiving cloud system.
 An alternate script will be added to copy to a CDSS/State of CO website in the future.
 
@@ -53,13 +77,10 @@ Maintainers:
 
 * Steve Malers, Open Water Foundation (@smalers)
 
-Contributors:
-
-* None yet.
-
 ## License ##
 
 The license is being determined as part of the OpenCDSS effort.
+CC BY 4.0 has been recommended.
 
 ## Release Notes ##
 

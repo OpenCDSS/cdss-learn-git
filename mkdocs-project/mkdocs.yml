@@ -25,6 +25,7 @@ pages:
   - '8b - Workflow Example for StateMod': '08b-lesson-workflow-example-statemod/lesson-workflow-example-statemod.md'
   - '9a - Merge Conflicts': '09a-lesson-merge-conflicts/lesson-merge-conflicts.md'
   - '10a - Pull Requests': '10a-lesson-pull-requests/lesson-pull-requests.md'
+  - '11a - Editing History': '11a-lesson-editing-history/lesson-editing-history.md'
 - 'Resources':
    - 'Git Resources': 'resources/resources.md'
    - 'Git Cheatsheet': 'resources/git-cheatsheet.md'
@@ -36,16 +37,13 @@ pages:
 # Install material theme:  http://squidfunk.github.io/mkdocs-material/
 # - pip install --user mkdocs-material
 theme: material
-# Install cosmo theme running:  'pip install --user mkdocs-bootswatch'
-# -See: http://mkdocs.github.io/mkdocs-bootswatch/#installation-usage
 #theme: readthedocs
-#theme: cosmo
 # Don't include GitHub link because edit page tool will automatically be on
 #repo_url:  https://github.com/OpenWaterFoundation/cdss-learn-git
 site_description:  'CDSS / Learn Git'
-site_author:  'Open Water Foundation'
+site_author:  'OpenCDSS'
 site_favicon:  'images/cdss-favicon.ico'
-copyright:  'Copyright Open Water Foundation'
+copyright:  'Copyright Colorado Department of Natural Resources'
 # Extra options:
 # Use extra CSS to customize styles, based on theme
 extra_css:
