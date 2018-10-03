@@ -64,7 +64,7 @@ Since the new branch will contain the content relevant to changes that have occu
 use a name consistent with the workflow.
 
 ```
-$ git checkout -b {newBranchName}
+$ git checkout -b fix-history
 ```
 
 Once inside this new branch copy the files from the backup repository or other copy of the files.
@@ -74,7 +74,7 @@ Ensure that the content that originally caused an issue is fixed, and commit mod
 
 The following steps applies the changes to the remote repository on GitHub.
 
-Switch to master branch: 
+Switch to master branch:
 
 ```
 $ git checkout master
@@ -83,7 +83,7 @@ $ git checkout master
 Merge branch with changes (no fast forward):  
 
 ```
-$ git merge --no-ff {newBranchName}`
+$ git merge --no-ff fix-history
 ```
 
 When pushing these changes to GitHub, `git` will try and suggest a `git pull` as necessary,
