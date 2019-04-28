@@ -18,6 +18,7 @@ and the resulting static website is professional-looking, navigable, and useful.
 
 The repository contains a typical MkDocs project in the `mkdocs-project` folder.
 Refer to [MkDocs documentation](http://www.mkdocs.org/) for guidance on creating MkDocs websites.
+See also [OWF / Learn MkDocs](http://learn.openwaterfoundation.org/owf-learn-mkdocs/).
 
 ```
 cdss-learn-git/         Git repository folder matching repository name.
@@ -46,9 +47,9 @@ C:\Users\user\            Windows user folder.
 
 The following software must be installed to view the documentation with MkDocs:
 
-* [Python 2 or 3](https://www.python.org/downloads/)
-* [MkDocs 16+](http://www.mkdocs.org/)
-* [cosmo MkDocstheme](http://mkdocs.github.io/mkdocs-bootswatch/#installation-usage) - nice theme with search and compact menus
+* [Python 3](https://www.python.org/downloads/)
+* [MkDocs 1.0.4](http://www.mkdocs.org/)
+* [Material Theme](https://squidfunk.github.io/mkdocs-material/).
 
 ## How to Edit/View/Deploy ##
 
@@ -71,21 +72,15 @@ Contributions can be made via normal Git/GitHub protocols:
 2. Use GitHub Issues to suggest changes (preferred for small changes).
 2. Fork the repository and use pull requests.
 
-## Credits ##
-
-Maintainers:
-
-* Steve Malers, Open Water Foundation (@smalers)
-
 ## License ##
 
-The license is being determined as part of the OpenCDSS effort.
-CC BY 4.0 has been recommended.
+The license for this documentation is the [Creative Commons CC-BY 4.0 license](LICENSE.md).
 
 ## Release Notes ##
 
-The following release notes indicate the update history for documentation, with GitHub repository issue indicated, if applicable
-(links to issues via README.md are not cleanly supported by GitHub so use the repository issues page to find).
+The following release notes indicate major milestones in the update history for documentation.
+See the Git repository issues for detailed information.
 
-* 2017-10-23 [2,3,4,5,8,12,14] - switch to Material theme, fill out content for additional pages, fix some broken links
-* 2017-10-01 - initial version
+* 2019-04-27 - Update to MkDocs 1.0.4 and opencdss.state.co.us.
+* 2017-10-23 - Switch to Material theme, fill out content for additional pages, fix some broken links.
+* 2017-10-01 - Initial version.

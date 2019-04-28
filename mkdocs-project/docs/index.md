@@ -33,30 +33,31 @@ instructions on the [GitHub repository web page](https://github.com/OpenWaterFou
 
 The following main sections are included in this documentation:
 
-* [Lesson 1 - GitHub Account](01-lesson-github-account/lesson-github-account) - set up a GitHub account in order to do the lessons
-* [Lesson 2 - Version Control Concepts](02-lesson-concepts/lesson-concepts) - general version control concepts relative to CDSS and Git
-* [Lesson 3 - Install Git Software](03-lesson-install/overview) - install Git software
-* [Lesson 4 - Configure Git](04-lesson-config/lesson-config) - configure Git software with user settings'
-* [Lesson 5 - Create a New Repository](05-lesson-new-repo/lesson-new-repo) - create a new repository on GitHub and clone to
+* [Lesson 1 - GitHub Account](01-lesson-github-account/lesson-github-account.md) - set up a GitHub account in order to do the lessons
+* [Lesson 2 - Version Control Concepts](02-lesson-concepts/lesson-concepts.md) - general version control concepts relative to CDSS and Git
+* [Lesson 3 - Install Git Software](03-lesson-install/overview.md) - install Git software
+* [Lesson 4 - Configure Git](04-lesson-config/lesson-config.md) - configure Git software with user settings'
+* [Lesson 5 - Create a New Repository](05-lesson-new-repo/lesson-new-repo.md) - create a new repository on GitHub and clone to
 to the local computer
-* [Lesson 6 - Standard Repository Files](06-lesson-standard-repo-files/lesson-standard-repo-files) - information about standard files
+* [Lesson 6 - Standard Repository Files](06-lesson-standard-repo-files/lesson-standard-repo-files.md) - information about standard files
 used in all repositories
-* [Lesson 7a - Using Git](07a-lesson-using-git/lesson-using-git) - thorough walk-through of common Git tasks (the basics)
-* [Lesson 7b - GitHub Tools](07b-lesson-github-tools/lesson-github-tools) - an overview of GitHub tools
-* [Lesson 7c - Difference Tools](07c-lesson-diff-tools/lesson-diff-tools) - information about file difference/comparison tools
-* [Lesson 7d - Documentation Example](07d-lesson-documentation-example/lesson-documentation-example) - walk-through of Git applied to documentation
-* [Lesson 7e - StateMod Dataset Example](07e-lesson-statemod-dataset-example/lesson-statemod-dataset-example) - walk-through of Git applied to StateMod model dataset
-* [Lesson 7f - StateMod Code Example](07f-lesson-statemod-code-example/lesson-statemod-code-example) - walk-through of Git applied to StateMod software code
-* [Lesson 8a - Workflow Concepts](08a-lesson-workflow-concepts/lesson-workflow-concepts) - introduction to workflow beyond the basics
-* [Lesson 8b - Merge Conflicts](08b-lesson-merge-conflicts/lesson-merge-conflicts) - examples of how to deal with merge conflicts
-* [Lesson 8c - Pull Requests](08c-lesson-pull-requests/lesson-pull-requests) - walk-through of a pull request
+* [Lesson 7a - Using Git](07a-lesson-using-git/lesson-using-git.md) - thorough walk-through of common Git tasks (the basics)
+* [Lesson 7b - GitHub Tools](07b-lesson-github-tools/lesson-github-tools.md) - an overview of GitHub tools
+* [Lesson 7c - Difference Tools](07c-lesson-diff-tools/lesson-diff-tools.md) - information about file difference/comparison tools
+* [Lesson 7d - Documentation Example](07d-lesson-documentation-example/lesson-documentation-example.md) - walk-through of Git applied to documentation
+* [Lesson 7e - StateMod Dataset Example](07e-lesson-statemod-dataset-example/lesson-statemod-dataset-example.md) - walk-through of Git applied to StateMod model dataset
+* [Lesson 7f - StateMod Code Example](07f-lesson-statemod-code-example/lesson-statemod-code-example.md) - walk-through of Git applied to StateMod software code
+* [Lesson 8a - Workflow Concepts](08a-lesson-workflow-concepts/lesson-workflow-concepts.md) - introduction to workflow beyond the basics
+* [Lesson 8b - Workflow Concepts - StateMod Code Example](08b-lesson-workflow-example-statemod/lesson-workflow-example-statemod.md) - workflow using StateMod code example
+* [Lesson 9a - Merge Conflicts](09a-lesson-merge-conflicts/lesson-merge-conflicts.md) - examples of how to deal with merge conflicts
+* [Lesson 10a - Pull Requests](10a-lesson-pull-requests/lesson-pull-requests.md) - walk-through of a pull request
+* [Lesson 11a - Editing History](11a-lesson-editing-history/lesson-editing-history.md) - editing commit history
 * Resources
-	- [Git Resources](resources/resources) - general list of resources
-	- [Git Cheatsheet](resources/git-cheatsheet) - helpful Git cheatsheets
-	- [Git Glossary](resources/glossary) - glossary of Git terms
-	- [Git Messages](resources/git-messages) - summary of common Git messages
-	- [Git Bash](resources/git-bash) - information about using Git Bash
-	- [Release Notes](resources/release-notes) - release notes for this documentation
+	- [Git Resources](resources/resources.md) - general list of resources
+	- [Git Common Tasks](resources/git-common-tasks/git-common-tasks.md) - Git common Git tasks and cheat sheets
+	- [Git Glossary](resources/glossary.md) - glossary of Git terms
+	- [Git Messages](resources/git-messages.md) - summary of common Git messages
+	- [Git Bash](resources/git-bash/git-bash.md) - information about using Git Bash
 
 ## Colorado's Decision Support Systems (CDSS) and OpenCDSS ##
 
@@ -79,8 +80,8 @@ This documentation is the result of such efforts.
 
 ## Open Water Foundation ##
 
-The Open Water Foundation (OWF, [openwaterfoundation.org](http://openwaterfoundation.org)) is a 501(c)3 social enterprise
-nonprofit that focuses on developing and supporting open source software to make better
+The Open Water Foundation (OWF, [openwaterfoundation.org](http://openwaterfoundation.org)) is a nonprofit social enterprise
+that focuses on developing and supporting open source software to make better
 decisions about water resources.  OWF is providing technical resources and management to
 transition CDSS software to sustainable open source projects.
 
@@ -92,12 +93,11 @@ The licenses for CDSS resources are being determined as part of the OpenCDSS pro
 
 ## Source Repository on GitHub ##
 
-The source files for this documentation are maintained in a GitHub repository:  [cdss-learn-git](https://github.com/OpenWaterFoundation/cdss-learn-git).
+The source files for this documentation are maintained in a GitHub repository:  [cdss-learn-git](https://github.com/OpenCDSS/cdss-learn-git).
 This repository may be moved to a State of Colorado GitHub account in the future.
 
 This documentation is prepared using MkDocs.  For full MkDocs documentation visit [mkdocs.org](http://mkdocs.org/).
 
 ## Release Notes ##
 
-This documentation was updated on 2017-10-23.
-See the [release notes in the GitHub repository](https://github.com/OpenWaterFoundation/cdss-learn-git#release-notes).
+See the [release notes in the GitHub repository](https://github.com/OpenCDSS/cdss-learn-git#release-notes).

@@ -38,9 +38,6 @@ However, it may make sense to include training materials with software in some c
 
 Legacy training materials such as Word/PDF and PowerPoint/PDF documents will find a home as CDSS product repositories are fully implemented.
 
-OpenCDSS training materials are initially being hosted on the [Open Water Foundation / Learn website](http://learn.openwaterfoundation.org/) but will be
-transitioned to an OpenCDSS or other State of Colorado website when sufficient content and cloud hosting structure is enabled.
-
 ### Git Workflow for Word/PowerPoint/PDF Documentation ###
 
 It may be appropriate to include Word/PowerPoint/PDF documents in a repository, for example for legacy training materials.
@@ -69,7 +66,7 @@ The Open Water Foundation has made recommendations for folder structure in the
 #### New Documentation Repository ####
 
 If a new documentation product needs to be created, first create a repository in GitHub,
-for example similar to [CDSS / Learn Git](https://github.com/OpenWaterFoundation/cdss-learn-git).
+for example similar to [CDSS / Learn Git](https://github.com/OpenCDSS/cdss-learn-git).
 
 #### New Contributor to Documentation ####
 
@@ -113,7 +110,7 @@ If it is used as an option then the other sections of this page can be adapted f
 One improvement to managing model dataset files is to use Git/GitHub to provide version control for the dataset.
 If this approach is taken, then an enhancement to datasets is the use of `README.md` files in dataset folders
 to explain the contents of those folders.
-See the [StateMod Dataset Example section](../07e-lesson-statemod-dataset-example/lesson-statemod-dataset-example)
+See the [StateMod Dataset Example section](../07e-lesson-statemod-dataset-example/lesson-statemod-dataset-example.md)
 for information about using Git/GitHub for a model dataset.
 
 ## Software Developer and User Documentation ##
@@ -126,8 +123,8 @@ there is an opportunity to explore using interactive documentation for developer
 For example, the following developer documentation has been created by the Open Water Foundation as StateCU and StateMod have
 been migrated to Git/GitHub and open source `gfortran` compiler:
 
-* [Learn StateCU (for Software Developers)](http://learn.openwaterfoundation.org/owf-learn-cdss-statecu-dev/)
-* [Learn StateMod (for Software Developers)](http://learn.openwaterfoundation.org/owf-learn-cdss-statemod-dev/)
+* [Learn StateCU (for Software Developers)](http://opencdss.state.co.us/statecu/latest/doc-dev/)
+* [Learn StateMod (for Software Developers)](http://opencdss.state.co.us/statemod/latest/doc-dev/)
 
 Because developer documentation is closely tied to the software code, it makes sense to include such documentation
 in the software code repositories so that developers update the documentation if the development environment changes.

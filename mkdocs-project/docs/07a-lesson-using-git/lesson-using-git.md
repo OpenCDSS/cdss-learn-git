@@ -52,7 +52,7 @@ The step can be repeated to restart a local repository for an automated build pr
 the local copy if the remote GitHub repository has undergone major changes and it is easier to start with a new copy.**
 
 See the previous lesson for example of how to create a repository and clone to a local computer:
-[New Repository](../05-lesson-new-repo/lesson-new-repo)
+[New Repository](../05-lesson-new-repo/lesson-new-repo.md).
 
 At any point the `git status` command can be used to display the status of the repository.
 For example, the following output illustrates the status for a new repository using Git Bash:
@@ -388,7 +388,7 @@ The following assume that the current folder is the root folder in the working f
 The following `git add` command adds a single file and `git status` shows that it has now
 been staged because the `README.md` file is listed under `Changes to be committed`.
 The `.gitignore` and `.gitattributes` files are assumed to have been added as per the
-[Standard Repository Files](../06-lesson-standard-repo-files/lesson-standard-repo-files) documentation.
+[Standard Repository Files](../06-lesson-standard-repo-files/lesson-standard-repo-files.md) documentation.
 
 ```sh
 sam (1-feature-init-repo *) test-cdss-git-training-repo $ git add README.md
@@ -980,15 +980,15 @@ Examples of user versions for CDSS include:
 * For documentation:
 	+ Package and distribute the documentation with software (for software documentation) or data (for dataset documentation)
 	+ Install the documentation on a public website
-	+ See the [Documentation Example](../07d-lesson-documentation-example/lesson-documentation-example)
+	+ See the [Documentation Example](../07d-lesson-documentation-example/lesson-documentation-example.md)
 * For model datasets (StateMod, StateCU, etc.):
 	+ Package and distribute input files so developers can create the model dataset files
 	+ Run the dataset using a specific model software version, and package
-	+ See the [StateMod Dataset Example](../07e-lesson-statemod-dataset-example/lesson-statemod-dataset-example)
+	+ See the [StateMod Dataset Example](../07e-lesson-statemod-dataset-example/lesson-statemod-dataset-example.md)
 	and distribute the full input and output
 * For software:
 	+ Package and distribute software installer that can be run to install the software.
-	+ See the [StateMod Code Example](../07f-lesson-statemod-code-example/lesson-statemod-code-example)
+	+ See the [StateMod Code Example](../07f-lesson-statemod-code-example/lesson-statemod-code-example.md)
 
 These steps are specific to the repository and its contents.
 Examples of the full workflow for the above cases are provided in other lessons.

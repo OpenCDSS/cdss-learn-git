@@ -9,7 +9,7 @@ The files that are discussed will be created in subsequent lessons.
 **Estimated completion time:  30 minutes**
 
 * [README.md](#readmemd) - landing page for GitHub repository web page
-* [LICENSE](#license) - license for repository
+* [LICENSE.md](#licensemd) - license for repository
 * [.gitignore](#gitignore) - used to ignore files from being committed to the repository
 * [.gitattributes](#gitattributes) - used to provide per-repository settings for all developers
 * [.github Folder](#github-folder) - provide issues template, pull request template, and `README.md`
@@ -43,10 +43,11 @@ committing to the repository.  For example, see [MarkdownPad](http://markdownpad
 
 `README.md` files can also be created in any folder in the repository to provide useful information.
 
-## LICENSE ##
+## LICENSE.md ##
 
-A text `LICENSE` file should be included in the root folder to indicate terms of use for the repository contents.
+A Markdown `LICENSE.md` file should be included in the root folder to indicate terms of use for the repository contents.
 A license file can be initialized when a new repository is created on GitHub or can be added later.
+See also [markdown-licenses on GitHub](https://github.com/IQAndreas/markdown-licenses).
 
 The OpenCDSS project is determining appropriate licenses for software and other content.
 
@@ -70,9 +71,8 @@ Additional `.gitignore` files can be added in any folder if appropriate.
 
 For example, the following `.gitignore` files are used for CDSS repositories:
 
-* [Learn Git .gitignore file](https://github.com/OpenWaterFoundation/cdss-learn-git/blob/master/.gitignore) - this documentation
-* [StateMod .gitignore file](https://github.com/OpenWaterFoundation/cdss-app-statemod-fortran/blob/master/.gitignore) - StateMod
-source code repository (link may be broken because repository is not yet public):
+* [Learn Git .gitignore file](https://github.com/OpenCDSS/cdss-learn-git/blob/master/.gitignore) - this documentation
+* [StateMod .gitignore file](https://github.com/OpenCDSS/cdss-app-statemod-fortran/blob/master/.gitignore) - StateMod source code repository
 
 See the following for more information:
 
@@ -94,8 +94,8 @@ line endings for one developer and another.  Git provides features to avoid this
 
 For example, the following `.gitattributes` files are used for CDSS repositories:
 
-* [Learn Git .gitattributes file](https://github.com/OpenWaterFoundation/cdss-learn-git/blob/master/.gitattributes) - this documentation
-* [StateMod .gitattributes file](https://github.com/OpenWaterFoundation/cdss-app-statemod-fortran/blob/master/.gitattributes) - StateMod
+* [Learn Git .gitattributes file](https://github.com/OpenCDSS/cdss-learn-git/blob/master/.gitattributes) - this documentation
+* [StateMod .gitattributes file](https://github.com/OpenCDSS/cdss-app-statemod-fortran/blob/master/.gitattributes) - StateMod
 source code repository (link may be broken because repository is not yet public):
 
 See the following for more information:
