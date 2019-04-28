@@ -1,6 +1,7 @@
 # cdss-learn-git #
 
-Colorado's Decision Support Systems (CDSS) Git/GitHub training.
+Colorado's Decision Support Systems (CDSS) Git/GitHub training documentation.
+See the [published CDSS / Learn Git documentation](http://opencdss.state.co.us/cdss-learn-git/).
 
 ## Introduction ##
 
@@ -59,10 +60,8 @@ site is being served locally).
 2. **To edit:**  Use a text editor.  The web browser content will automatically refresh when changes are detected.
 If the browser does not load content, it is usually because there is an error,
 and a message will be printed in the command line window.
-3. **To deploy:**  Run the `build-util/copy-to-owf-amazon-s3.sh` shell script 
-or `build-util/copy-to-owf-amazon-s3.bat` Windows batch file to copy to OWF cloud static website.
-This will require appropriate credentials for the receiving cloud system.
-An alternate script will be added to copy to a CDSS/State of CO website in the future.
+3. **To deploy:**  Run the `build-util/copy-to-co-dnr-gcp.sh` shell script in Git Bash.
+This will require appropriate credentials for Google Cloud Platform.
 
 ## Contributing ##
 
