@@ -1,4 +1,4 @@
-# Common Git Tasks / Overview
+# Learn Git / Common Tasks / Overview
 
 This documentation provides guidance on common tasks that are simple enough to run on the command line.
 
@@ -34,12 +34,12 @@ Linefeed `LF` (`\n`) will not be displayed although the presence of separate lin
 Carriage return `CR` (`\r`) characters will be shown as `^M` at the end of lines
 if DOS-style `CRLF` is being used for the file, for example:
 
-![vi -b end-of-line example](overview-images/vi-b-end-of-line.png)
+![vi -b end-of-line example](images/vi-b-end-of-line.png)
 
 Another option on Windows is [Notepad++](https://notepad-plus-plus.org/).  Use the ***View / Show Symbol / Show End of Line*** menu to toggle
 whether the end of line characters are shown, which will show, for example:
 
-![Notepad++ end-of-line example](overview-images/notepadpp-end-of-line.png)
+![Notepad++ end-of-line example](images/notepadpp-end-of-line.png)
 
 ## Task - Determine whether remote repository is ahead of local
 

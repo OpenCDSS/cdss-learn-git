@@ -6,7 +6,7 @@ of the impact to the repository and other developers.
 
 The following is an example from StateDMI software development, but each case will require specific evaluation.
 
-In adding to StateDMI and pushing commits to [cdss-app-statedmi-main](https://github.com/OpenWaterFoundation/cdss-app-statedmi-main) repository,
+In adding to StateDMI and pushing commits to [cdss-app-statedmi-main](https://github.com/OpenCDSS/cdss-app-statedmi-main) repository,
 an issue arose where all of the lines in `StateDMI_Processor.java` file were committed as having been changed.
 This is most likely an issue stemming from Windows `CRNL` line endings for local files versus Unix `NL` line endings stored in the repository
 The `.gitattributes` file is used to help with this but sometimes line endings are still an issue.

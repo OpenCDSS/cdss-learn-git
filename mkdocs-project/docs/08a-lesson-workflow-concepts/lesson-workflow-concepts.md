@@ -104,7 +104,7 @@ described in the previous section.
 
 ## GitHub-only Workflow ##
 
-**This workflow is recommended as an option for CDSS for contributors that
+**This workflow is an option for CDSS for contributors that
 do not want to deal with Git software.
 [See the CDSS discussion below](#recommended-cdss-git-workflow).**
 
@@ -138,7 +138,7 @@ This approach may be appropriate for data or documentation repositories.
 
 ## Pull-Only Workflow ##
 
-**This workflow is recommended as an option for CDSS in cases where a contributor may
+**This workflow is an option for CDSS in cases where a contributor may
 work with enhancing current code but does not want to deal with merging the enhancements into the production version.
 [See the CDSS discussion below](#recommended-cdss-git-workflow).**
 

@@ -11,18 +11,18 @@ The remainder of this page discusses how to use Git/GitHub to manage the StateMo
 
 * [StateMod Code Version Control Considerations](#statemod-code-version-control-considerations)
 * [Git Workflow for StateMod Code](#git-workflow-for-statemod-code)
-* [cdss-app-statemod-fortran](https://github.com/OpenWaterFoundation/cdss-app-statemod-fortran) - StateMod code repository discussed below
+* [cdss-app-statemod-fortran](https://github.com/OpenCDSS/cdss-app-statemod-fortran) - StateMod code repository discussed below
 
 ----------------
 
 ## StateMod Code Version Control Considerations ##
 
 * **StateMod code repository** - The Open Water Foundation has migrated CDSS software to a Git/GitHub repository
-([cdss-app-statemod-fortran](https://github.com/OpenWaterFoundation/cdss-app-statemod-fortran)) and confirmed compilation with `gfortran`.
+([cdss-app-statemod-fortran](https://github.com/OpenCDSS/cdss-app-statemod-fortran)) and confirmed compilation with `gfortran`.
 * **Developer documentation** - StateMod development documentation exists in a MkDocs project in the `doc-dev-mkdocs-project` folder
 in the main repository.
 Edit and view this documentation using MkDocs protocols.
-For example, see the [Open Water Foundation / Learn MkDocs](http://learn.openwaterfoundation.org/) documentation.
+For example, see the [Open Water Foundation / Learn MkDocs](http://learn.openwaterfoundation.org/owf-learn-mkdocs) documentation.
 * **Develoment Environment** - Although the above environment and documentation include Eclipse/Photran,
 initial work with the StateMod code used command-line compiling with the `makefile`,
 rather than compiling from Eclipse/Photran.

@@ -69,8 +69,7 @@ This file is discussed in the next lesson so it is not necessary to create now (
 experiment with a specific language).
 * **Initialize with a license file.**
 A license can be selected to indicate how others may distribute and use the content of the repository.
-The GPL version 3 license is selected below.
-Licenses are being determined for OpenCDSS projects.
+The GPL version 3 license is selected below, which is typical for OpenCDSS repositories.
 In addition to software projects, licenses can be specified for repositories that contain
 documentation (like this training documentation), model datasets, and other content.
 For example, [Creative Commons](https://creativecommons.org/) licenses may be appropriate for general content.

@@ -2,8 +2,8 @@
 # Use hash-comments to comment out pages have not been written
 # Reference: http://www.mkdocs.org/user-guide/configuration/
 #
-site_name: 'CDSS Learn / Git'
-pages:
+site_name: 'CDSS / Learn Git'
+nav:
 - Introduction: index.md
 - 'Lessons':
   - '1 - GitHub Account': '01-lesson-github-account/lesson-github-account.md'
@@ -28,23 +28,34 @@ pages:
   - '11a - Editing History': '11a-lesson-editing-history/lesson-editing-history.md'
 - 'Resources':
    - 'Git Resources': 'resources/resources.md'
-   - 'Git Cheatsheet': 'resources/git-cheatsheet.md'
+   - 'Git Common Tasks': 'resources/git-common-tasks/git-common-tasks.md'
    - 'Git Glossary': 'resources/glossary.md'
    - 'Git Messages': 'resources/git-messages.md'
    - 'Git Bash (Shell)': 'resources/git-bash/git-bash.md'
    - 'Release Notes': 'resources/release-notes.md'
-# MkDocs comes with mkdocs and readthedocs themes, which are limited
-# Install material theme:  http://squidfunk.github.io/mkdocs-material/
-# - pip install --user mkdocs-material
-theme: material
-#theme: readthedocs
-# Don't include GitHub link because edit page tool will automatically be on
-#repo_url:  https://github.com/OpenWaterFoundation/cdss-learn-git
-site_description:  'CDSS / Learn Git'
-site_author:  'OpenCDSS'
-site_favicon:  'images/cdss-favicon.ico'
-copyright:  'Copyright Colorado Department of Natural Resources'
-# Extra options:
+# ------- configuration properties ---------------
+# Alphabetize
+# ------------------------------------------------
+copyright:  'Colorado Department of Natural Resources'
+# ------------------------------------------------
 # Use extra CSS to customize styles, based on theme
 extra_css:
   - 'css/extra-material-theme.css'
+# ------------------------------------------------
+# Google Analytics
+# - see:  https://squidfunk.github.io/mkdocs-material/getting-started/#google-analytics
+google_analytics:
+ - 'UA-43023264-1'
+ - auto
+# ------------------------------------------------
+# Don't publish the repo because it leads to irritating edit links
+#repo_url:  https://github.com/OpenCDSS/cdss-learn-git
+# ------------------------------------------------
+site_author:  'OpenCDSS'
+site_description:  'CDSS / Learn Git'
+# ------------------------------------------------
+# Use Material theme
+# - installation notes:  https://github.com/squidfunk/mkdocs-material
+theme:
+  name: material
+  favicon: images/CDSS-favicon.png

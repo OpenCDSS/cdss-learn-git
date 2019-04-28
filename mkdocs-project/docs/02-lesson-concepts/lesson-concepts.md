@@ -89,8 +89,8 @@ In both cases, the repository administrator can designate who has write access t
 
 Information about transferring copies of files between local and remote repositories is presented in later lessons.
 
-Initial OpenCDSS repositories are hosted on the [Open Water Foundation's GitHub account](https://github.com/OpenWaterFoundation) and
-have names that start with `cdss-`.
+OpenCDSS repositories are hosted on the [OpenCDSS GitHub account](https://github.com/OpenCDSS).
+CDSS software repositories have names that start with `cdss-`.
 OpenCDSS repositories are named somewhat verbosely to indicate the type of content,
 a specific product name, and programming language.
 This helps repository users understand the repository contents from the name.
@@ -563,13 +563,10 @@ Adjustments will be made over time to reflect experience on OpenCDSS software pr
 	training materials.  It is assumed that regular contributors to OpenCDSS will have achieved
 	a high proficiency with Git/GitHub and follow conventions of the OpenCDSS software projects.
 2. **GitHub organization account**:
-	The [Open Water Foundation GitHub organization](https://github.com/OpenWaterFoundation)
-	account is initially being used for CDSS repositories.
-	+ OWF has a nonprofit account that is cost-effective even for private repositories.
-	+ OWF will coordinate with the CWCB and DWR to evaluate whether organization accounts for those organizations
-	should be used instead, for longterm maintenance.
-	This can be done at zero cost once open source licenses are adopted for repositories.
-	If such a change occurs, developers will need to change repository configurations to indicate the new remote.
+	The [OpenCDSS Organization Account](https://github.com/OpenCDSS)
+	account is used for CDSS repositories.
+	+ All repositories on this account use open source licenses and are public.
+	+ Uses of the account is coordinated with the CWCB and DWR.
 3. **GitHub developer accounts**:
 	Individual developers that use GitHub and expect to contribute to OpenCDSS
 	projects via GitHub should sign up for personal GitHub accounts.
@@ -599,6 +596,8 @@ Adjustments will be made over time to reflect experience on OpenCDSS software pr
 	configure their development environment but would provide more flexibility.
 	This topic will be evaluated as multiple development environment tools are implemented over time by different
 	contributors.
-	
+6. **Git Utilities**:
+	See the `build-util/git*` utilities in the main repository for a product for useful Git utilities,
+	which are useful when multiple repositories comprise a product.
 
 The remainder of this documentation focuses on teaching Git/GitHub skills that will result in proficiency needed for OpenCDSS.

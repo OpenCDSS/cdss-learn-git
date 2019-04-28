@@ -19,9 +19,9 @@ The following installation resources are helpful:
 The following documentation sections describe how to install and configure various Git tools.
 
 * Command-line (general) Git software:
-	+ [Git](git/)
-		- [Git for Windows](git#install-git-on-windows-git-for-windows) - **this software is recommended for Windows**
+	+ [Git](git.md)
+		- [Git for Windows](git.md#install-git-on-windows-git-for-windows) - **this software is recommended for Windows**
 * More advanced Git client interfaces:
 	+ May add additional software to documentation in the future, such as UltraEdit Git integration.
 * Integrated development environment Git:
-	+ [Git for Eclipse](eclipse/)
+	+ [Git for Eclipse](eclipse.md)
