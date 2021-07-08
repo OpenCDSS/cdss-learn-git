@@ -22,7 +22,8 @@ nav:
   - '7e - StateMod Dataset Example': '07e-lesson-statemod-dataset-example/lesson-statemod-dataset-example.md'
   - '7f - StateMod Code Example': '07f-lesson-statemod-code-example/lesson-statemod-code-example.md'
   - '8a - Workflow Concepts': '08a-lesson-workflow-concepts/lesson-workflow-concepts.md'
-  - '8b - Workflow Example for StateMod': '08b-lesson-workflow-example-statemod/lesson-workflow-example-statemod.md'
+  - '8b - More Workflow Details': 08b-specifics-of-workflow/specifics-of-workflow.md
+  - '8c - Workflow Example for StateMod': '08c-lesson-workflow-example-statemod/lesson-workflow-example-statemod.md'
   - '9a - Merge Conflicts': '09a-lesson-merge-conflicts/lesson-merge-conflicts.md'
   - '10a - Pull Requests': '10a-lesson-pull-requests/lesson-pull-requests.md'
   - '11a - Editing History': '11a-lesson-editing-history/lesson-editing-history.md'
