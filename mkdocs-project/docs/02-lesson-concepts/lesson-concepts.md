@@ -388,7 +388,7 @@ processing software.
 
 Google Docs provides the ability for multiple people to collaborate, including editing a document simultaneously.
 The document content lives in the cloud on a Google server.
-See more information in [G Suite Learning Center - Get started with Docs](https://gsuite.google.com/learning-center/products/docs/get-started://gsuite.google.com/learning-center/products/docs/get-started)
+See more information in [G Suite Learning Center - Get started with Docs](https://support.google.com/a/users/answer/9300503?hl=en&sjid=7515127222703140140-NA)
 
 Note that it is possible with GitHub to edit content with a browser via the GitHub website, assuming
 that access is granted.

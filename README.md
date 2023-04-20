@@ -80,6 +80,7 @@ The license for this documentation is the [Creative Commons CC-BY 4.0 license](L
 The following release notes indicate major milestones in the update history for documentation.
 See the Git repository issues for detailed information.
 
+* 2023-04-20 - Updated documentation to fix broken links and remediate issues related to accessibility including alt text for images and heading structures.
 * 2019-04-27 - Update to MkDocs 1.0.4 and opencdss.state.co.us.
 * 2017-10-23 - Switch to Material theme, fill out content for additional pages, fix some broken links.
 * 2017-10-01 - Initial version.

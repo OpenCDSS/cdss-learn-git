@@ -47,7 +47,7 @@ The following sections illustrate this process in order to educate the original 
 
 ## Run git-check.sh ##
 
-The [`git-check.sh` script](../resources/git-bash/git-bash#git-checksh) is useful for summarizing the status of Git
+The [`git-check.sh` script](../resources/git-bash/git-bash.md#git-checksh) is useful for summarizing the status of Git
 repositories for a product, particularly in cases when multiple repositories are associated with a product.
 To run from a Git Bash window, change to the `build-util` folder in the `cdss-app-statemod-fortran` repository
 working files or type the path to the script.  The following is typical output.

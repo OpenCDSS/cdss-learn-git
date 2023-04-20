@@ -186,7 +186,7 @@ submit their contributions via "pull requests".
 This approach can be used for open source projects to accept third-party contributions and can also be
 used for internal team contributions if direct commits to the `master` branch by multiple
 people are undesirable.  This workflow is discussed in more detail in the
-[Pull Request Lesson](../10a-lesson-pull-requests/lesson-pull-requests).  The following illustrates this workflow:
+[Pull Request Lesson](../10a-lesson-pull-requests/lesson-pull-requests.md).  The following illustrates this workflow:
 
 1. A GitHub user (contributor) wishes to contribute to a CDSS project.  They have a GitHub account and have 
 good Git/GitHub skills.

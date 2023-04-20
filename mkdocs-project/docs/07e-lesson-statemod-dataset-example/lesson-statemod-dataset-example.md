@@ -11,7 +11,7 @@ Instead, dated folders or other methods have been used to track versions.
 This can be problematic due to multiple versions of files existing on different computers
 being modified by different modelers, sometimes at the same time.
 
-Tools that allow file comparison, such as discussed in the [Difference Tools](../07c-lesson-diff-tools/lesson-diff-tools) section
+Tools that allow file comparison, such as discussed in the [Difference Tools](../07c-lesson-diff-tools/lesson-diff-tools.md) section
 can help, but a version control system is designed to help with such issues.
 
 The Open Water Foundation is working with StateCU/StateMod modelers on an experiment to evaluate whether Git/GitHub

@@ -109,9 +109,8 @@ The resulting command prompt appears similar to the following:
 ### Auto-Completion with `git-completion.bash` ###
 
 The complete example in the previous section uses the `git-completion.sh` script
-to enable auto-completion of Git commands.  See the following original sources describing this script:
+to enable auto-completion of Git commands.  See the following original source describing this script:
 
-* [Git Basics - Tips and Tricks](https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks)
 * [git-completion.bash](https://github.com/git/git/blob/master/contrib/completion/git-completion.bash)
 
 

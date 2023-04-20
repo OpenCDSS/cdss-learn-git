@@ -126,7 +126,7 @@ See also:
 
 ## Pull requests ##
 
-Pull requests are discussed in the [Pull Requests](../08c-lesson-pull-requests/lesson-pull-requests) section.
+Pull requests are discussed in the [Pull Requests](../08c-lesson-pull-requests/lesson-pull-requests.md) section.
 
 See also:
 

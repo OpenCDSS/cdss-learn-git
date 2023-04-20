@@ -4,7 +4,7 @@ This documentation provides guidance on common tasks that are simple enough to r
 
 The following are helpful cheat sheets:
 
-* [GitHub Git Cheat Sheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
+* [GitHub Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
 The following is a list of common tasks that are explained below.
 Most of these tasks use the Git command line such as Git Bash.

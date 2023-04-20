@@ -58,4 +58,4 @@ site_description:  'CDSS / Learn Git'
 # - installation notes:  https://github.com/squidfunk/mkdocs-material
 theme:
   name: material
-  favicon: images/CDSS-favicon.ico
+  favicon: 'images/NewCOLogo32x32.gif'

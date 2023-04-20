@@ -41,14 +41,14 @@ public repositories).
 Login to GitHub using a web browser and URL `https://github.com/`.  Select the ***Sign in*** link.
 
 If this is the first time using GitHub, sign up for an account you must
-[create an account](../01-lesson-github-account/lesson-github-account).
+[create an account](../01-lesson-github-account/lesson-github-account.md).
 
 ## Create a Repository ##
 
 After logging in, the GitHub website will provide an option to ***Start a Project***.  Click on this button/link.
 Or, look for a ***New Repository*** button/link lower on the page.
 Note that in GitHub "Start a Project" is equivalent to creating a new repository whereas on some other Git cloud sites like
-[Bitbucket](https://bitbucket.org/produc://bitbucket.org/product) projects are a layer above repositories.
+[Bitbucket](https://bitbucket.org/product) projects are a layer above repositories.
 
 Fill in the information for a new repository similar to below and press the ***Create repository*** button/link,
 with the following considerations:
