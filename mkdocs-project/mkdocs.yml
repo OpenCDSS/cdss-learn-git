@@ -44,9 +44,10 @@ extra_css:
 # ------------------------------------------------
 # Google Analytics
 # - see:  https://squidfunk.github.io/mkdocs-material/getting-started/#google-analytics
-google_analytics:
- - 'UA-43023264-1'
- - auto
+extra:
+  analytics:
+    provider: google
+    property: 'G-PTJLXFDPDL'
 # ------------------------------------------------
 # Don't publish the repo because it leads to irritating edit links
 #repo_url:  https://github.com/OpenCDSS/cdss-learn-git
@@ -58,4 +59,4 @@ site_description:  'CDSS / Learn Git'
 # - installation notes:  https://github.com/squidfunk/mkdocs-material
 theme:
   name: material
-  favicon: 'images/NewCOLogo32x32.gif'
+  favicon: images/CDSS-favicon.ico

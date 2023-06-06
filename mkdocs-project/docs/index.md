@@ -61,10 +61,10 @@ used in all repositories
 
 ## Colorado's Decision Support Systems (CDSS) and OpenCDSS ##
 
-Colorado's Decision Support Systems ([CDSS, cdss.state.co.us](http://cdss.state.co.us))
+Colorado's Decision Support Systems ([CDSS, cdss.state.co.us](https://cdss.colorado.gov/))
 has been developed to answer important questions about Colorado's water resources.
-CDSS efforts are led by the [Colorado Water Conservation Board (CWCB)](http://cwcb.state.co.us)
-and [Colorado Division of Water Resources (DWR)](http://water.state.co.us).
+CDSS efforts are led by the [Colorado Water Conservation Board (CWCB)](https://cwcb.colorado.gov)
+and [Colorado Division of Water Resources (DWR)](https://dwr.colorado.gov/).
 
 ![CDSS Website](index-images/CDSS-website.png)
 
